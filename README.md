@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# QRCodeChallenge
-=======
 ## Sobre o desafio
 
 Nesse desafio você deve criar uma aplicação para treinar Node.js junto ao Typescript, sinta-se livre para utilizar controllers, services ou qualquer conceito que achar necessário.
@@ -57,4 +54,3 @@ Sempre que desejar rodar os testes da aplicação você pode utilizar o comando 
 ## Prazo de entrega
 
 O prazo de entrega do desafio é até o dia 17/09 às 15h.
->>>>>>> a20d9a3fb19c4128052e4a62f3c40f78892df62c

@@ -28,7 +28,9 @@
       {
         "ts": "never"
       }
-    ]
+    ],
+    "class-methods-use-this": "off",
+    "no-console": "off"
   },
   "settings": {
     "import/resolver": {
