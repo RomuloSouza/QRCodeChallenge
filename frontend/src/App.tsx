@@ -1,8 +1,18 @@
 import React from 'react';
 
+import GlobalStyles from './styles/GlobalStyles';
+import MainForm from './components/MainForm';
+
 function App() {
   return (
-    <h1>QRCode</h1>
+    <>
+      <div style={{display: "flex"}}>
+        <MainForm />
+        <MainForm />
+
+      </div>
+      <GlobalStyles />
+    </>
   );
 }
 
