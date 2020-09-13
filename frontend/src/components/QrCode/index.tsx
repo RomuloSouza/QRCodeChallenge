@@ -4,12 +4,13 @@ import QRCode from 'qrcode.react';
 
 import { Container, Square } from './styles';
 
-const QrCode: React.FC = () => {
-  const qrcode = "$2a$10$NyMUABJroKUW5P5OFHBJcuVtSzB41OC8E6RXHniEDnQZj33y956cu"
+const QrCode: React.FC<{qrCode: string}> = (props) => {
+  const classes = props.qrCode ? '' : 'closed';
+
   return (
-    <Container>
+    <Container className={classes}>
       <Square>
-        <QRCode value={qrcode} size={256} />
+        <QRCode value={props.qrCode} size={256} />
       </Square>
     </Container>
   );

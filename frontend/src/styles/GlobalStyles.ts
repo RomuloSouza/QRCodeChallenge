@@ -5,6 +5,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: var(--color-primary);
   }
   :root {
     --color-primary: #0d2f81;

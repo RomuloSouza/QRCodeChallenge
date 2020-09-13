@@ -12,22 +12,17 @@ const rotate = keyframes`
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
+  width: 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 10%;
 
-  background: var(--color-primary);
-
-  // // @media (min-width: 1024px) {
-  // //   max-width: 480px;
-  // // }
+  &.closed {
+    display: none;
+  }
 `;
 
 export const Square = styled.div`
-  // height: 100%;
-  // width: 100%;
   display: flex;
   &:hover {
     animation: ${rotate} 2s linear infinite;

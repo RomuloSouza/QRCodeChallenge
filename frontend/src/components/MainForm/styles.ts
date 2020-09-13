@@ -5,23 +5,17 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   height: 100vh;
-  width: 100%;
+  width: 70%;
+  margin: auto;
 
   background: var(--color-primary);
-
-  // // @media (min-width: 1024px) {
-  // //   max-width: 480px;
-  // // }
 `;
 
-export const Form = styled.form`
+export const Form = styled.div`
   display: flex;
-  // heigth: 100%;
-  width: 50%;
+  width: 45%;
 
   flex-direction: column;
-  justify-content: center;
-  // margin: 20vh auto;
   margin: auto;
 
   .title {
@@ -47,6 +41,11 @@ export const Form = styled.form`
     margin: 20px auto;
     padding: 5px;
     font-size: 18px;
+
+    .focus, &:focus {
+      outline: 0;
+      box-shadow: none!important;
+    }
   }
 `;
 
