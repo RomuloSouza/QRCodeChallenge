@@ -5,6 +5,7 @@ const transactionRouter = Router();
 const transactionController = new TransactionController();
 
 transactionRouter.post('/transactions', (request, response) => {
+  console.log('New transaction received!');
   return transactionController.handle(request, response);
 });
 
