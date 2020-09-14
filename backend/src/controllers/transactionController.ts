@@ -15,6 +15,8 @@ class TransactionController {
       const salt = bcrypt.genSaltSync(10);
       const qrCodeString = bcrypt.hashSync(JSON.stringify(params), salt);
 
+      console.log('returning qrcode: ', qrCodeString);
+
       return response.status(200).json({ params, qrCodeString });
     } catch (err) {
       return response.status(400).json({ error: err.message });

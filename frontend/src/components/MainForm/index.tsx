@@ -37,7 +37,7 @@ const MainForm: React.FC = () => {
           <span className="title">QRCodeChallenge</span>
 
           <input type="text" value={payerId} onChange={e => setPayerId(e.target.value)} placeholder="Payer ID"/>
-          <input type="text" value={value} onChange={e => setValue(e.target.value)} placeholder="Value ID"/>
+          <input type="text" value={value} onChange={e => setValue(e.target.value)} placeholder="Value"/>
           <input type="text" value={receiverId} onChange={e => setReceiverId(e.target.value)} placeholder="Receiver ID"/>
 
           <button  onClick={e => sendForm(e)}>Gerar QR Code</button>

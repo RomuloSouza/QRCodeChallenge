@@ -6,6 +6,7 @@ const transactionController = new TransactionController();
 
 transactionRouter.post('/transactions', (request, response) => {
   console.log('New transaction received!');
+  console.log('Body: ', request.body);
   return transactionController.handle(request, response);
 });
 
